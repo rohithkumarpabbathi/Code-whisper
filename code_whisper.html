@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeWhisper - Python Explainer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Landing Section -->
+  <div class="container" id="landingSection">
+    <div class="left">
+      <img class="app-image" 
+        src="https://static.wixstatic.com/media/6c2903_bd71f35a586f47d8bf224886dcd98276~mv2.jpeg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6c2903_bd71f35a586f47d8bf224886dcd98276~mv2.jpeg" 
+        alt="Code Debugger Illustration">
+    </div>
+    <div class="right">
+      <div class="app-name">CodeWhisper</div>
+      <div class="creator-name">By Rohith Kumar</div>
+      <div class="description">
+        Paste any Python code and get a **human-like, line-by-line explanation** — clear and easy to understand.
+      </div>
+      <button id="getStartedBtn" class="animated-btn">Get Started</button>
+    </div>
+  </div>
+
+  <!-- Code Section -->
+  <div class="container" id="codeSection">
+    <div class="code-left">
+      <div class="app-name">CodeWhisper</div>
+      <div class="creator-name">By Rohith Kumar</div>
+      <div class="description">
+        Paste your Python code below to get **detailed explanations line by line**.
+      </div>
+      <textarea id="pythonCode" placeholder="Paste your Python code here..."></textarea>
+      <button id="explainBtn">Explain</button>
+      <pre id="lineExplanation" class="line-explanation"></pre>
+
+      <!-- Feedback Buttons -->
+      <div id="feedback" class="feedback">
+        <span>Was this explanation helpful?</span>
+        <div class="feedback-btns">
+          <button class="feedback-btn" id="feedbackYes">👍 Yes</button>
+          <button class="feedback-btn" id="feedbackNo">👎 No</button>
+        </div>
+      </div>
+
+      <div id="thankYouMessage" class="thank-you-message"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
